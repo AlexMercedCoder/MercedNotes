@@ -24,6 +24,8 @@ form.addEventListener("submit", function (event) {
 
   mgr.addNote(newNote);
   render.renderNotes();
+
+  this.reset()
 });
 
 search.addEventListener("input", (event) => {
