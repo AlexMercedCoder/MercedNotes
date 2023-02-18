@@ -15,27 +15,33 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-
+    <link rel="stylesheet" href="styles.css">
     <script type="module" src="app.js" defer></script>
     <title>Document</title>
   </head>
   <body class="container">
-    <header>
-      <h1>Merced-Notes</h1>
+    <header class="amtitle">
+      <h1 class="display-1">Merced-Notes</h1>
     </header>
     <section class="row">
-      <main class="col"></main>
-      <aside class="col">
+      <main class="col-7"></main>
+      <aside class="col amside">
         <h3>Search</h3>
-        <input type="text" name="search" placeholder="search term" />
+        <input type="text" class="form-control" name="search" placeholder="search term" />
+        <hr>
         <h3>Add Note</h3>
         <form>
-          <input type="text" name="note" placeholder="note" />
-          <input type="text" name="tags" placeholder="tag1,tag2,tag3" />
-          <button>Submit</button>
+          <input type="text" class="form-control" name="note" placeholder="note" />
+          <input type="text" class="form-control" name="tags" placeholder="tag1,tag2,tag3" />
+          <button class="btn btn-warning">Submit</button>
         </form>
-        <button id="export">EXPORT NOTES</button>
+        <hr>
+        <button id="export" class="btn btn-warning">EXPORT NOTES</button>
+        <hr>
         <div id="exportblock"></div>
+        <h3>Import Notes</h3>
+        <input type="file" class="form-control" name="file" placeholder="file" />
+        <button id="import" class="btn btn-warning">IMPORT NOTES</button>
       </aside>
     </section>
   </body>

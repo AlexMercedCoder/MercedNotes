@@ -63,9 +63,11 @@ export class NoteRenderer {
       .map(
         (note, index) => `
       <div class="note">
+      <div>
       <p class="message">${note.note}</p>
       <p class="tags">${note.tags}</p>
-      <button index=${index}>Delete</button>
+      </div>
+      <button class="btn btn-warning" index=${index}>Delete</button>
       </div>
       `
       )
